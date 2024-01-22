@@ -1,0 +1,169 @@
+/*! Resets */
+body {
+  margin: unset;
+}
+h1 {
+  margin: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+ul {
+  margin: unset;
+  padding: unset;
+  list-style: none;
+}
+a {
+  color: unset;
+  text-decoration: unset;
+}
+fieldset,
+legend {
+  all: unset;
+  display: block;
+  inline-size: 100%;
+}
+input[type="text"],
+input[type="password"],
+select {
+  all: unset;
+  display: block;
+  inline-size: 100%;
+}
+button {
+  all: unset;
+}
+/* ! Typography */
+
+/* !  Commons (공통적인) */
+:root {
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Serif", serif;
+  font-size: 10px;
+}
+.type_lineTop {
+  border-top: 3px solid var(--color-Primary-80);
+}
+.type_linkColor {
+  color: var(--color-sub-01);
+}
+.ir {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+/* ! CSS Variables */
+:root {
+  --color-Primary-10: #fff;
+  --color-Primary-20: #eee;
+  --color-Primary-30: #d9d9d9;
+  --color-Primary-40: #999;
+  --color-Primary-50: #666;
+  --color-Primary-60: #444;
+  --color-Primary-70: #333;
+  --color-Primary-80: #111;
+  --color-sub-01: #556e9b;
+}
+/* ! Layouts */
+.wrapper {
+  height: 100vh;
+  background-color: var(--color-Primary-10);
+}
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+/* ! Components */
+.header {
+  display: flex;
+}
+.header-title {
+  flex-grow: 1;
+}
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 0.6;
+  padding: 10px 0 34px 0;
+}
+.title-sub {
+  margin-left: 3.4rem;
+}
+.header-menu {
+  display: flex;
+  gap: 30px;
+  color: var(--color-Primary-80);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.header-list {
+  min-width: 150px;
+}
+.list:hover {
+  color: var(--color-sub-01);
+}
+.list:first-child {
+  margin-top: 2px;
+}
+.header-search-section {
+  flex-grow: 1;
+}
+.search-box {
+  background-color: var(--color-Primary-20);
+  font-family: "Roboto Serif", serif;
+  font-weight: 300;
+  padding: 6px 4px;
+  margin-top: 4px;
+}
+.header-sns {
+  color: var(--color-sub-01);
+  margin-top: 10px;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+.sns-lists {
+  display: flex;
+  gap: 4px;
+  margin-left: 4px;
+}
+.sns-link {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.sns-link.type_fecebook {
+  background-color: slateblue;
+}
+.sns-link.type_twitter {
+  background-color: skyblue;
+}
+.sns-link.type_instagram {
+  background-color: slateblue;
+}
+.sns-link.type_pinterest {
+  background-color: lightcoral;
+}
+.sns-link.type_youtube {
+  background-color: red;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.side-menu-btn {
+  background-image: url("./image/menu_FILL0_wght400_GRAD0_opsz24.svg");
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+}
+/* !Mediaqueries */
+/*? @media (max-width: 800px)  */
