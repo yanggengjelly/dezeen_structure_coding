@@ -33,13 +33,12 @@ button {
   all: unset;
 }
 /* ! Typography */
-
-/* !  Commons (공통적인) */
 :root {
   font-family: "Roboto", sans-serif;
   font-family: "Roboto Serif", serif;
   font-size: 10px;
 }
+/* !  Commons (공통적인) */
 .type_lineTop {
   border-top: 3px solid var(--color-Primary-80);
 }
