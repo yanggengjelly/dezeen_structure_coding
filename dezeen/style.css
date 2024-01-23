@@ -2,7 +2,9 @@
 body {
   margin: unset;
 }
-h1 {
+h1,
+h2,
+h3 {
   margin: unset;
   font-size: unset;
   font-weight: unset;
@@ -32,10 +34,14 @@ select {
 button {
   all: unset;
 }
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
 /* ! Typography */
 :root {
   font-family: "Roboto", sans-serif;
-  font-family: "Roboto Serif", serif;
+  /* font-family: "Roboto Serif", serif; */
   font-size: 10px;
 }
 /* !  Commons (공통적인) */
@@ -52,6 +58,24 @@ button {
   height: 1px;
   margin: -1px;
   overflow: hidden;
+}
+.type_btnBg {
+  background-color: var(--color-Primary-80);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-position: center right 0.8px;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+.type_btnBg:hover {
+  background-color: var(--color-sub-01);
+}
+.previous-btn {
+  background-image: url("./image/arrow_back_ios_FILL0_wght400_GRAD0_opsz24.svg");
+}
+.next-btn {
+  background-image: url("./image/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg");
 }
 /* ! CSS Variables */
 :root {
@@ -75,6 +99,20 @@ button {
   margin: 0 auto;
   padding: 100px 20px;
 }
+.l_row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+.l_col_9_12 {
+  grid-column: auto / span 9;
+}
+.l_col_6_12 {
+  grid-column: auto / span 6;
+}
+.l_col_3_12 {
+  grid-column: auto / span 3;
+}
 /* ! Components */
 .header {
   display: flex;
@@ -83,20 +121,18 @@ button {
   flex-grow: 1;
 }
 .title {
-  font-family: "Roboto", sans-serif;
-  font-size: 6rem;
+  font-size: 9rem;
   font-weight: 600;
   line-height: 0.6;
   padding: 10px 0 34px 0;
 }
 .title-sub {
-  margin-left: 3.4rem;
+  margin-left: 5.4rem;
 }
 .header-menu {
   display: flex;
   gap: 30px;
   color: var(--color-Primary-80);
-  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -115,6 +151,7 @@ button {
 .search-box {
   background-color: var(--color-Primary-20);
   font-family: "Roboto Serif", serif;
+  font-size: 1rem;
   font-weight: 300;
   padding: 6px 4px;
   margin-top: 4px;
@@ -129,7 +166,7 @@ button {
 .sns-lists {
   display: flex;
   gap: 4px;
-  margin-left: 4px;
+  margin: 6px 0 0 4px;
 }
 .sns-link {
   display: inline-block;
@@ -163,6 +200,75 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
+}
+.highlight-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 6px;
+}
+.highlight-title {
+  color: var(--color-sub-01);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.highlight-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 4px;
+}
+.highlight-col {
+  aspect-ratio: 1/ 1;
+  overflow: hidden;
+}
+.highlight-link {
+  position: relative;
+  z-index: 1;
+}
+.highlight-cover {
+  object-fit: cover;
+}
+.highlight-col-title {
+  color: var(--color-Primary-10);
+  position: absolute;
+  display: inline;
+  top: 0;
+  left: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.8;
+  transform: translateY(-26px);
+  transition: transform 0.4s;
+}
+.col-title-sub {
+  background-color: var(--color-sub-01);
+  padding: 8px;
+}
+.highlight-col-title:hover {
+  color: var(--color-Primary-40);
+}
+.highlight-link:hover .highlight-col-title {
+  transform: translateY(0px);
+}
+.main-content {
+  margin-top: 40px;
+  gap: 30px;
+}
+.contents {
+  box-shadow: inset 0 0 20px blue;
+}
+.contents-card {
+  box-shadow: inset 0 0 20px lime;
+  gap: 30px;
+  row-gap: 30px;
+  margin-top: 4px;
+}
+.card {
+  box-shadow: inset 0 0 20px pink;
+}
+.side-contents {
+  box-shadow: inset 0 0 20px red;
 }
 /* !Mediaqueries */
 /*? @media (max-width: 800px)  */
