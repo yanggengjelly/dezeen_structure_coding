@@ -121,13 +121,13 @@ img {
   flex-grow: 1;
 }
 .title {
-  font-size: 9rem;
+  font-size: 8.4rem;
   font-weight: 600;
   line-height: 0.6;
   padding: 10px 0 34px 0;
 }
 .title-sub {
-  margin-left: 5.4rem;
+  margin-left: 5.2rem;
 }
 .header-menu {
   display: flex;

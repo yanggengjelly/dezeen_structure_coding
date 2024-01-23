@@ -2,4 +2,4 @@
 
 ### LIST
 
---[ ] dezeen site [바로가기](https://www.dezeen.com/architecture/)
+- [x] dezeen site [바로가기](https://www.dezeen.com/architecture/)
