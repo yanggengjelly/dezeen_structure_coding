@@ -1,6 +1,6 @@
-## dezeen
+## 사이트 HTML/CSS 구조연습
 
-### dezeen 건축디자인 사이트 HTML/CSS 구조연습
+### LIST
 
 ---
 
