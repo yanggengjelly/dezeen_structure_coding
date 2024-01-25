@@ -38,6 +38,9 @@ img {
   max-width: 100%;
   vertical-align: top;
 }
+p {
+  margin: unset;
+}
 strong {
   font-weight: unset;
   font-size: unset;
@@ -93,6 +96,8 @@ strong {
   --color-Primary-70: #333;
   --color-Primary-80: #111;
   --color-sub-01: #556e9b;
+  --color-sub-10: #f0f0f0;
+  --color-sub-20: #d8d8d8;
 }
 /* ! Layouts */
 .wrapper {
@@ -304,8 +309,9 @@ strong {
 }
 .card-description {
   font-family: "Roboto Serif", serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
+  margin: 16px 0;
 }
 .side-contents {
   box-shadow: inset 0 0 20px red;
@@ -318,9 +324,17 @@ strong {
   font-weight: 700;
   gap: 18px;
 }
+.card-footer-list {
+  padding-right: 18px;
+  border-right: 2px solid var(--color-Primary-30);
+}
+.side-content-section {
+  background-color: var(--color-sub-10);
+}
 .side-contents-title {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
+  margin-top: 6px;
 }
 .side-section-header {
   display: flex;
@@ -328,8 +342,49 @@ strong {
 }
 .side-section-title {
   width: 50%;
-  padding-left: 20px;
-  box-shadow: inset 0 0 20px blue;
+  padding: 8px 0 8px 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.side-section-title:hover {
+  color: var(--color-sub-01);
+}
+.side-section-title:last-child {
+  background-color: var(--color-sub-20);
+}
+.side-section-main {
+  padding: 20px;
+}
+.side-section-storiesCover {
+  padding-bottom: 20px;
+}
+.side-section-storiesHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.storiesTitle-section {
+  border-top: 2px solid var(--color-sub-20);
+  display: flex;
+}
+.storiesTitle {
+  color: var(--color-sub-20);
+  font-size: 3.2rem;
+  font-weight: 700;
+  padding-right: 16px;
+  margin-top: 2px;
+}
+.storiesDescription {
+  font-family: "Roboto Serif", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+.storiesLink:hover .storiesTitle-section {
+  border-top: 2px solid var(--color-sub-01);
+}
+.storiesLink:hover .storiesTitle {
+  color: var(--color-sub-01);
 }
 /* !Mediaqueries */
 /*? @media (max-width: 800px)  */
