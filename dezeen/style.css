@@ -314,7 +314,9 @@ strong {
   margin: 16px 0;
 }
 .side-contents {
-  box-shadow: inset 0 0 20px red;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .card-footer-lists {
   display: flex;
@@ -334,7 +336,8 @@ strong {
 .side-contents-title {
   font-size: 1.4rem;
   font-weight: 600;
-  margin-top: 6px;
+  background-color: var(--color-Primary-10);
+  padding-top: 4px;
 }
 .side-section-header {
   display: flex;
@@ -385,6 +388,14 @@ strong {
 }
 .storiesLink:hover .storiesTitle {
   color: var(--color-sub-01);
+}
+.piece-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 4px;
+}
+.footer {
+  margin-top: 36px;
 }
 /* !Mediaqueries */
 /*? @media (max-width: 800px)  */
