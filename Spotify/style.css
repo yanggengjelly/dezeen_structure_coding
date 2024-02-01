@@ -59,14 +59,60 @@ img {
 ul {
   list-style: none;
 }
+h1,
+h2 {
+  margin: unset;
+  font-size: unset;
+  font-weight: unset;
+}
 a {
   text-decoration: none;
   color: inherit;
 }
+button {
+  all: unset;
+}
 /* ! Typography */
-
+:root {
+  font-size: 10px;
+}
 /* !  Commons (공통적인) */
-
+.button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 50px 50px 50px 50px; /* 상단 부분에 대한 반지름만 설정 */
+  padding: 10px 20px;
+}
+.type_black {
+  color: var(--color-sub-color10);
+  background-color: var(--color-sub-color80);
+}
+.type_white {
+  border: 1px solid var(--color-sub-color80);
+  box-sizing: border-box;
+}
+.type_black:hover {
+  transform: scale(1.1);
+}
+.type_white:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.info_sup {
+  font-size: 1.1rem;
+}
+/* ! CSS Variables */
+:root {
+  --color-Primary-color01: #ffcdd2;
+  --color-sub-color10: #fff;
+  --color-sub-color20: #eee;
+  --color-sub-color30: #d9d9d9;
+  --color-sub-color40: #999;
+  --color-sub-color50: #666;
+  --color-sub-color60: #444;
+  --color-sub-color70: #333;
+  --color-sub-color80: #111;
+}
 /* ! Layouts */
 .wrapper {
   height: 100vh;
@@ -80,7 +126,7 @@ a {
 }
 /* ! Components */
 .header {
-  background-color: black;
+  background-color: var(--color-sub-color80);
   padding: 14px 0;
 }
 .header-container {
@@ -93,9 +139,42 @@ a {
   margin-left: auto;
   display: flex;
   gap: 36px;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 .header-menu-list {
   color: white;
+}
+.main-banner {
+  background-color: var(--color-Primary-color01);
+}
+.main-banner-description {
+  display: flex;
+  gap: 40px;
+  padding: 40px 0;
+}
+.banner-section {
+  display: flex;
+  flex-direction: column;
+}
+.banner-section-title {
+  font-size: 3.4rem;
+  font-weight: 900;
+}
+.banner-section-title-info {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.banner-button-section {
+  display: flex;
+  gap: 10px;
+}
+.type_banner_infoSup {
+  margin-top: auto;
+}
+.banner-cover {
+  max-width: 400px;
+  margin-left: auto;
 }
 /* !Mediaqueries */
 /*? @media (max-width: 800px)  */
